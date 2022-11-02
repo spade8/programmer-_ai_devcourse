@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-house_df = pd.read_csv("train.csv")
-# sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
-# plt.show()
-
-fig = plt.figure(figsize=(10,10))
+house_df = pd.read_csv("streamlit_proj/train.csv")
 sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
-st.pyplot(fig)
+plt.show()
+
+# fig = plt.figure(figsize=(10,10))
+# sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
+# st.pyplot(fig)
 
 
 
