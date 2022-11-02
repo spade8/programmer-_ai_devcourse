@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-house_df = pd.read_csv("train.csv")
+house_df = pd.read_csv("1st_monthly_project/streamlit_proj/train.csv")
 sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
 plt.show()
 
