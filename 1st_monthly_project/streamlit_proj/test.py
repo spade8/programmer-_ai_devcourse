@@ -1,8 +1,35 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-st.write(df)
+
+house_df = pd.read_csv("train.csv")
+# sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
+# plt.show()
+
+fig = plt.figure(figsize=(10,10))
+sns.scatterplot(x = 'SalePrice',y = 'TotalBsmtSF', data = house_df)
+st.pyplot(fig)
+
+
+
+#LotFrontage LotArea OverallQual OverallCond YearBuilt CentralAir
+
+
+
+# GrLivArea
+
+
+
+
+
+
+
+
+
+
+
+
+
